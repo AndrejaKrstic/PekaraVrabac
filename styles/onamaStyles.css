@@ -1,0 +1,362 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #D2BE96;
+    font-family: 'Montserrat';
+}
+
+.logo{
+    color:#604020;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color:#604020;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 17px;
+    
+
+}
+#onama{
+    color: white;
+}
+.nav-links a:hover{
+    color: white;
+}
+.fon{
+    display: none;
+    cursor: pointer;
+}
+
+.fon div{
+    width: 25px;
+    height: 3px;
+    background-color:#604020;
+    margin: 5px;
+    transition: all 0.3s ease ;
+}
+/* @media all and (max-width:1950px){
+    
+    
+    .nav-links{
+        width: 60%;
+        pointer-events: all;
+    }
+} */
+@media all and (max-width:1950px){
+    .div1{
+        height: 25vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+}
+@media all and (max-width:1550px){
+    .nav-links{
+        width: 60%;
+        pointer-events: all;
+    }
+    .div1{
+        height: 25vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+   
+}
+
+
+@media all and (max-width:768px){
+    
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #D2BE96;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        opacity: 0;
+        transition: transform 0.5s ease-in;
+        pointer-events: none;
+        
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .fon{
+        display: block;
+    }
+    .div1{
+        height: 25vh;
+        padding-top: 4vh;
+        padding-bottom: 5vh;
+    }
+
+}
+@media all and (max-width:620px){
+    
+    .div1{
+        height: 33vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    .nav-links{
+        pointer-events: none;
+    }
+}
+@media all and (max-width:539px){
+    
+    .div1{
+        height: 35vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    .nav-links{
+        pointer-events: none;
+    }
+}
+@media all and (max-width:490px){
+     
+    .div1{
+        height: 40vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    .nav-links{
+        pointer-events: none;
+    }
+}
+@media all and (max-width:387px){
+   
+    .div1{
+        height: 45vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    .nav-links{
+        pointer-events: none;
+    }
+}
+@media all and (max-width:362px){
+   
+    .div1{
+        height: 49vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    .nav-links{
+        pointer-events: none;
+    }
+}
+
+
+.nav-active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+
+    }to{
+        opacity: 1;
+        transform: translateX(0px);
+    
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+body{
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("https://t4.ftcdn.net/jpg/02/87/69/55/360_F_287695520_GagNdRjB27CPiq5XDCdJIFMiT0So0gw7.jpg");
+
+}
+
+.sekcija{
+    background-image: url('https://www.trenker.com/CustomerData/552/Files/Images/produkte/halbbackwaren/header.jpg');
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20vh;
+    height: 70vh;
+    align-content: center;
+    width: 100%;
+
+}
+.div1{
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    background-color: #D2BE96;
+    text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.zaposlenje{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+}
+.div-zaposlenje{
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #604020;
+    width: 30vh;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.div-zaposlenje:hover{
+    background-color: #D2BE96;
+    color: black;
+}
+.paragraf{
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: bold;
+    max-width: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sekcija-forma{
+    text-align: center;
+}
+
+form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    text-align: left;
+}
+
+.div-prijava{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 50%;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #D2BE96;
+    align-content: center;
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: #604020;
+
+}
+#pozicija{
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: #604020;
+    background-color: #D2BE96;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #604020;
+}
+input[type=text] {
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: #604020;
+    outline: none;
+    width: 100%;
+    border-width: 2px;
+    border-color: #604020;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    background: transparent;
+    
+}
+input[type=submit], input[type=reset] {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: #604020;
+    background: transparent;
+    border-width: 2px;
+    width: 100%;
+    border-top-style: solid;
+    border-radius: 10px;
+    border-color: #604020;
+}
+
+#motivaciono_pismo{
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: #604020;
+    border-radius: 10px;
+    height: 150px;
+    outline: none;
+    width: 100%;
+    border-width: 2px;
+    border-color: #604020;
+    background: transparent;
+
+}
+input[type="submit"]:hover{
+    background-color:#604020;
+    color: #D2BE96;
+    cursor: pointer;
+}
+
+input[type="reset"]:hover{
+    background-color:#604020;
+    color: #D2BE96;
+    cursor: pointer;
+}

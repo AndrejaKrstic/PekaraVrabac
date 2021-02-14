@@ -1,0 +1,226 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #D2BE96;
+    font-family: 'Montserrat';
+}
+
+.logo{
+    color:#604020;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color:#604020;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 17px;
+    
+
+}
+#kontakt{
+    color: white;
+}
+.nav-links a:hover{
+    color: white;
+}
+.fon{
+    display: none;
+    cursor: pointer;
+}
+
+.fon div{
+    width: 25px;
+    height: 3px;
+    background-color:#604020;
+    margin: 5px;
+    transition: all 0.3s ease ;
+}
+@media all and (max-width:1950px){
+    .detalji{
+        height: 400px;
+    }
+    .nav-links{
+        pointer-events: all;
+    }
+
+}
+
+@media all and (max-width:1550px){
+    .nav-links{
+        width: 60%;
+        pointer-events: all;
+    }
+    .detalji{
+        height: 400px;
+    }
+
+}
+
+@media all and (max-width:768px){
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #D2BE96;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        opacity: 0;
+        transition: transform 0.5s ease-in;
+        pointer-events: none;
+        
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .fon{
+        display: block;
+    }
+}
+@media all and (max-width:454px){
+   
+    .detalji{
+        height: 450px;
+    }
+    .nav-links{
+        pointer-events: none;
+    }
+}
+@media all and (max-width:379px){
+    
+    .detalji{
+        height: 480px;
+    }
+    .nav-links{
+        pointer-events: none;
+    }
+}
+.nav-active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+
+    }to{
+        opacity: 1;
+        transform: translateX(0px);
+    
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+body{
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("https://t4.ftcdn.net/jpg/02/87/69/55/360_F_287695520_GagNdRjB27CPiq5XDCdJIFMiT0So0gw7.jpg");
+
+}
+.lokacija{
+    display: flex;
+    max-width: 800px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.detalji{
+    width: 100%; 
+    background-color: #604020;
+    color:#D2BE96;
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+#map{
+    border-style: solid;
+    border-width: 3px;
+    border-color: #604020;
+}
+.utisci{
+    max-width: 300px;
+    background-color: #D2BE96;
+    border-radius: 10px;
+    color: #604020;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.radno-vreme{
+    width: 100%;
+    background: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url("https://hips.hearstapps.com/ame-prod-goodhousekeeping-assets.s3.amazonaws.com/main/embedded/48419/lidl-pastel-de-nata.png");
+    background-size: contain;
+    color: #604020;
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: bolder;
+    padding-top: 100px;
+}
+#vreme{
+    text-align: center;
+    color: #604020;
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    font-size: 19px;
+    background-color: #D2BE96;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+#datum{
+    text-align: center;
+    color: #604020;
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    font-size: 19px;
+    background-color: #D2BE96;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}

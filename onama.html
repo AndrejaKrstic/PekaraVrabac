@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>O nama</title>
+    <link rel="stylesheet" href="styles/onamaStyles.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style>
+        .error{
+            color: red;
+            font-family: 'Montserrat';
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h3>pekara vrabac</h3>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html" id="pocetna">Početna</a>
+            </li>
+            <li>
+                <a href="proizvodi.html" id="proizvodi">Proizvodi</a>
+            </li>
+            <li>
+                <a href="#" id="onama">O nama</a>
+            </li>
+            <li>
+                <a href="kontakt.html" id="kontakt">Kontakt</a>
+            </li>
+        </ul>
+        <div class="fon">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+
+        </div>
+    </nav>
+    <br><br><br>
+
+    <section class="sekcija">
+        <div class="div1">
+            Pekara Vrabac je osnovana 2018-te godine sa jednim ciljem - da 
+            svakom komšiluku pruži priliku da uživa u svežem i kvalitetnom pecivu 
+            pečenom s ljubavlju. Naši pekari su tu da ovaj cilj ispune na što 
+            bolji način. Naša istorija je tek krenula da se piše, želimo da i ti 
+            postaneš deo nje!
+
+        </div>
+    </section>
+
+    
+    <section class="zaposlenje">
+        <br><br><br><br><br><br>
+        <div class="div-zaposlenje">Postani član našeg tima!</div>
+        <p class="paragraf"><br><br>Tražiš zaposlenje? Došao si na pravo mesto! Unesi željenu poziciju i lične podatke. Odgovaramo u najkraćem roku!</p>
+        <br><br><br><br><br>
+    </section>
+
+
+    <section class="sekcija-forma">
+        <div class="div-prijava">
+            <form id="forma"> 
+                <label for="Ime" class="unos">Unesite vaše ime</label>
+                <input type="text" id="ime" name="ime"/>
+                <br><br>
+                <label for="Prezime" class="unos">Unesite vaše prezime</label>
+                <input type="text" id="prezime" name="prezime"/>
+                <br><br>
+                <label for="mejl" class="unos">Unesite vašu e-mail adresu</label>
+                <input type="text" id="mejl" name="mejl"/>
+                <br><br>
+                <label for="pozicija" class="unos">Izaberite željenu poziciju</label>
+                <select id="pozicija" name="pozicija">
+                    <option value="default" selected="selected" disabled>Pozicije</option>
+                    <option value="pekar">Pekar</option>
+                    <option value="prodavac">Prodavac u pekari</option>
+                    <option value="pica-majstor">Pica majstor</option>
+                </select>
+                <br><br>
+                <label for="motivaciono_pismo" class="unos">Motivaciono pismo: </label>
+                <textarea id="motivaciono_pismo" cols="30" rows="1" name="motivaciono"></textarea>
+                <br><br>
+                <input type="submit" value="Prijavi se"/>
+                <br>
+                <input type="reset" value="Resetuj formu"/>
+
+            </form>
+
+        </div>
+       
+
+    </section>
+    <br><br><br><br>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="js/onamaMain.js"></script>
+</body>
+</html>

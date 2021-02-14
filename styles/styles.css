@@ -1,0 +1,260 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #D2BE96;
+    font-family: 'Montserrat';
+   
+}
+
+.logo{
+    color:#604020;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    z-index: 2;
+    
+    
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color:#604020;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 17px;
+    
+
+}
+#pocetna{
+    color: white;
+}
+.nav-links a:hover{
+    color: white;
+}
+.fon{
+    display: none;
+    cursor: pointer;
+}
+
+
+.fon div{
+    width: 25px;
+    height: 3px;
+    background-color:#604020;
+    margin: 5px;
+    transition: all 0.3s ease ;
+}
+
+@media all and (max-width:1550px){
+    
+    
+    .nav-links{
+        width: 60%;
+        pointer-events: all;
+    }
+    .div1{
+     flex-basis: 300px;
+    }
+    .div2{
+     flex-basis: 300px;
+    }
+     .div3{
+     flex-basis: 300px;
+    }
+    
+}
+@media all and (max-width:1037px){   
+    
+    .nav-links{
+        width: 60%;
+        pointer-events: all;
+    }
+    .div1{
+        flex-basis: 800px;
+    }
+    .div2{
+     flex-basis: 800px;
+    }
+     .div3{
+     flex-basis: 800px;
+    }
+    
+}
+
+@media all and (max-width:768px){
+    
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #D2BE96;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        width: 100%;
+        transition: transform 0.5s ease-in;
+        opacity: 0;
+        pointer-events: none;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .fon{
+        display: block;
+    }
+    section.dobrodosli{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    div.divDobrodosli{
+       font-size: 40px;
+       width: 300px;
+       margin-right: auto;
+       margin-left: auto;
+   }
+   .div1{
+       flex-basis: 70%;
+   }
+   .div2{
+    flex-basis: 70%;
+    }
+    .div3{
+    flex-basis: 70%;
+    }
+    
+}
+
+.nav-active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+
+    }to{
+        opacity: 1;
+        transform: translateX(0px);
+    
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+body{
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("https://t4.ftcdn.net/jpg/02/87/69/55/360_F_287695520_GagNdRjB27CPiq5XDCdJIFMiT0So0gw7.jpg");
+
+}
+.dobrodosli{
+    
+    background-image: url("https://bellunafoods.com/wp-content/uploads/2018/10/Bakery-Products.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 60vh;
+    padding-top: 180px;
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
+.divDobrodosli{
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 75px;
+    color: #604020;
+    font-family: 'Courgette';
+    background-color: rgba(255,255,255,.6);
+    border-radius: 10px;
+    
+}
+
+
+.tataDiv{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    text-align: center;
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 0.8;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+.div1{
+    background-color: #D2BE96;
+    color: #604020;
+    border-radius: 10px;
+    height: 400px;
+    flex-basis: 300px;
+    margin: 1em;
+    padding: 11px;
+    text-align: center;
+    z-index: 1;
+    
+}
+.div2{
+    background-color: #D2BE96;
+    color: #604020;
+    border-radius: 10px;
+    height: 400px;
+    flex-basis: 300px;
+    margin: 1em;
+    padding: 11px;
+    text-align: center;
+}
+.div3{
+    background-color: #D2BE96;
+    color: #604020;
+    border-radius: 10px;
+    height: 400px;
+    flex-basis: 300px;
+    margin: 1em;
+    padding: 11px;
+    text-align: center;
+}
